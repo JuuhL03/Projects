@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .center {
+      width: 100vw;
+      height: 100vh;
+      background-color: hsl(47, 88%, 63%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .shadow {
+      position: absolute;
+      width: 400px;
+      height: 520px;
+      background-color: hsl(0, 0%, 0%);
+      border: 1px black;
+      border-radius: 20px;
+      margin-top: 40px;
+      margin-left: 40px;
+    }
+
+    .box {
+      z-index: 1;
+      width: 400px;
+      height: 520px;
+      background-color: hsl(0, 0%, 100%);
+      border: 1px black;
+      border-style: solid;
+      border-radius: 20px;
+      font-family: 'Figtree', sans-serif;
+    }
+
+    .box img {
+      margin-top: 20px;
+      width: 360px;
+      border-radius: 10px;
+    }
+
+    .boxY {
+      width: 90px;
+      height: 30px;
+      margin-top: 20px;
+      margin-left: 20px;
+      background-color: hsl(47, 88%, 63%);
+      border: 1px black;
+      border-radius: 5px;
+    }
+
+    .boxY h1 {
+      padding: 5px 0px;
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    .text {
+      justify-content: left;
+      align-items: left;
+      text-align: left;
+      margin-left: 20px;
+    }
+
+    .text p {
+      margin-top: 15px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .text h1 {
+      margin-top: 15px;
+      font-size: 25px;
+      font-weight: 800;
+      color: hsl(47, 88%, 63%);
+    }
+
+    .text h3 {
+      margin-top: 15px;
+      font-size: 17px;
+      font-weight: 500;
+      color: hsl(0, 0%, 50%);
+    }
+
+    .text h2 {
+      margin-top: -35px;
+      margin-left: 50px;
+      font-size: 17px;
+      font-weight: 800;
+    }
+
+    .text img {
+      width: 40px;
+    }
+
+    @media (max-width: 600px) {
+
+      .shadow {
+        width: 330px;
+        height: 460px;
+      }
+
+      .box {
+        width: 350px;
+        height: 480px;
+      }
+
+      .box img {
+        margin-top: 20px;
+        width: 300px;
+        border-radius: 10px;
+      }
+
+      .boxY {
+        margin-left: 25px;
+      }
+
+      .boxY h1 {
+        padding: 7px 0px;
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      .text {
+        margin-left: 25px;
+      }
+
+      .text p {
+        font-size: 13px;
+      }
+
+      .text h1 {
+        margin-top: 15px;
+        font-size: 20px;
+        color: hsl(0, 0%, 7%);
+      }
+
+      .text h3 {
+        font-size: 15px;
+      }
+
+      .text h2 {
+        margin-top: -30px;
+        margin-left: 50px;
+        font-size: 15px;
+      }
+
+      .text img {
+        margin-top: 30px;
+        width: 35px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="center">
+    <div class="shadow"></div>
+    <div class="box">
+      <img src="assets/images/illustration-article.svg" alt="illustration-article">
+      <div class="boxY">
+        <h1>Learning</h1>
+      </div>
+      <div class="text">
+        <p>Published 21 Dec 2023</p>
+        <h1>HTML & CSS foundations</h1>
+        <h3> These languages are the backbone of every website, defining structure, content, and presentation.</h3>
+        <img src="assets/images/image-avatar.webp" alt="image-avatar">
+        <h2>Greg Hooper</h2>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
