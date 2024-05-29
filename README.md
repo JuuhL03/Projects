@@ -4,3 +4,4 @@ Projetos desenvolvidos por conta própria, contém:
 - DISCORD BOT --> Python
 - QR CODE --> HTML, CSS
 - CARD MAIN --> HTML, CSS
+- MARIO GAME --> HTML, CSS, JS 
